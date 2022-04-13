@@ -1,3 +1,3 @@
 A simple login page with fun alerts for SP-3 course.
 
-https://ihsan-nahid.github.io/login_practice/
+https://ihsan-nahid.github.io/login_practice-main
