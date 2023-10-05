@@ -12,12 +12,30 @@
 			<p>Username</p>
 			<input type="text" name="" placeholder="Enter Username">
 			<p>Password</p>
-			<input type="password" name="" placeholder="Enter Password">
+			<input type="password" name="" placeholder="Enter Password" id="password">
+			<input type="password" name="" placeholder="Enter Password Again" id="re_password">
 			<input type="submit" name="" value="Login" onclick="myLogin()" id="js">
 			<a href="#" onclick="myFunction1()" id="js">Lost Your Password?</a><br>
 			<a href="#" onclick="myFunction2()" id="js">Don't have an Account?</a>
 		</form>
+		<div id="result" style="text-align: center;"></div>
 	</div>
+	<script>
+        function authenticate()
+        {
+            var password_first = document.getElementById("password").value;
+            var password_second = document.getElementById("re_password").value;
+
+            if (password_first === password_second)
+            {
+                document.getElementById("result").innerHTML = "Success";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Failure";
+            }
+        }
+    </script>
 	<script src="script.js"></script>
 </body>
 </html>
